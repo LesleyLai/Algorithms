@@ -6,6 +6,7 @@ set (CMAKE_CXX_STANDARD_REQUIRED ON)
 project(Algorithm)
 
 add_subdirectory(third-party)
+add_subdirectory(util)
 
 add_subdirectory(merge)
 

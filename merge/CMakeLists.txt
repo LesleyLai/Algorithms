@@ -1,5 +1,6 @@
-add_executable(${PROJECT_NAME}_merge_sort
+add_executable(merge_sort
     "merge_sort.hpp"
+    "inversions.hpp"
     "main.cpp")
 
-target_link_libraries(${PROJECT_NAME}_merge_sort UnitTest)
+target_link_libraries(merge_sort UnitTest Utilities)

@@ -8,6 +8,8 @@
 #include "merge_sort.hpp"
 #include "inversions.hpp"
 
+#include "file2ints.hpp"
+
 template<class Container>
 void fill_random_ints(Container& c, int min, int max) {
     std::random_device rd;
@@ -28,9 +30,8 @@ TEST_CASE("Merge sort") {
 
 
     SUBCASE("merge sort with large vector") {
-//        std::vector<int> v(200);
-//        fill_random_ints(v, 0, 500);
-        std::vector<int> v{10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+        std::vector<int> v(200);
+        fill_random_ints(v, 0, 500);
         merge_sort(v);
         CHECK(is_sorted(v.cbegin(), v.cend()));
     }
@@ -56,5 +57,4 @@ TEST_CASE("Count inversions") {
         std::vector<int> v {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
         CHECK_EQ(count_inversions(v), 45);
     }
-
 }
