@@ -9,4 +9,4 @@ add_subdirectory(third-party)
 add_subdirectory(util)
 
 add_subdirectory(merge)
-
+add_subdirectory(quicksort)

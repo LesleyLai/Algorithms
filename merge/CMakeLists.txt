@@ -3,4 +3,4 @@ add_executable(merge_sort
     "inversions.hpp"
     "main.cpp")
 
-target_link_libraries(merge_sort UnitTest Utilities)
+target_link_libraries(merge_sort UnitTest)
